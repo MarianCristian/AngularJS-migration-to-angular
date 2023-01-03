@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AngularJS example</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.2.1/angular-material.min.js"></script>
+
+    <script src="app.js"></script>
+
+    <!-- Controllers -->
+    <script src="main/main.controller.js"></script>
+    <script src="weather/weather.controller.js"></script>
+    <script src="weather/add-weather/add-weather.controller.js"></script>
+    <script src="info/info.controller.js"></script>
+
+    <!-- Services -->
+    <script src="services/weather.service.js"></script>
+    <script src="services/info.service.js"></script>
+
+    <!-- Directives -->
+    <script src="directives/weather-card.js"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-cloak>
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools">
+                <md-button ng-href="/">
+                    Home
+                </md-button>
+                <md-button ng-href="#weather">
+                    Current Weather
+                </md-button>
+                <md-button ng-href="#info">
+                    City Info
+                </md-button>
+            </div>
+        </md-toolbar>
+        <br>
+    </div>
+    <ng-view></ng-view>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">{{weather.City}}</span>
+            <span class="md-subhead">{{weather.Time}}</span>
+        </md-card-title-text>
+        <div></div>
+    </md-card-title>
+    <md-card-content layout="column">
+        <p layout-align="center" layout-padding>
+            {{weather.Description}}
+        </p>
+        <p>Current Weather: <b>{{weather.CurrentTemperature}} {{weather.Measurement}}</b></p>
+        <p>Wind: <b>{{weather.Wind}}</b></p>
+        <p>Humidity: <b>{{weather.Humidity}}</b></p>
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+        <md-button ng-click="delete(weather);" class="md-raised md-warn">Delete</md-button>
+      </md-card-actions>
+</md-card>

@@ -1,0 +1,80 @@
+{
+  "Weather": [
+    {
+      "id": 1,
+      "City": "London",
+      "Time": "Mon 12 PM",
+      "CurrentTemperature": "7",
+      "Measurement": "°C",
+      "Description": "Mainly clear currently with showers developing overnight.",
+      "Humidity": "52%",
+      "Wind": "20 km/h"
+    },
+    {
+      "id": 2,
+      "City": "Madrid",
+      "Time": "Mon 01:09 AM",
+      "CurrentTemperature": "0",
+      "Measurement": "°C",
+      "Description": "Mostly cloudy with a brief shower or two.",
+      "Humidity": "25%",
+      "Wind": "6 km/h"
+    },
+    {
+      "id": 3,
+      "City": "New York",
+      "Time": "Mon 18 PM",
+      "CurrentTemperature": "-1",
+      "Measurement": "°C",
+      "Description": "Partly sunny and mild; great day to be outside.",
+      "Humidity": "52%",
+      "Wind": "27 km/h"
+    },
+    {
+      "id": 4,
+      "City": "Moscov",
+      "Time": "Mon 12 PM",
+      "CurrentTemperature": "-2",
+      "Measurement": "°C",
+      "Description": "Cloudy with snow at times in the afternoon, accumulating 5-10 cm.",
+      "Humidity": "10%",
+      "Wind": "20 km/h"
+    }
+  ],
+  "Cities": [
+    "London",
+    "Madrid",
+    "New York",
+    "Moscov"
+  ],
+  "CityInfo": [
+    {
+      "Name": "London",
+      "Population": "8,799,800",
+      "TimeZone": "UTC (Greenwich Mean Time)",
+      "Country": "United Kingdom",
+      "ShortHistory": "London is the capital of England and the United Kingdom and one of the largest and most important cities in the world. The area was originally settled by early hunter gatherers around 6,000 B.C., and researchers have found evidence of Bronze Age bridges and Iron Age forts near the River Thames. Ancient Romans founded a port and trading settlement called Londinium in 43 A.D., and a few years later a bridge was constructed across the Thames to facilitate commerce and troop movements. But in 60 A.D., Celtic queen Boudicca led an army to sack the city, which was burned to the ground in the first of many fires to destroy London. The city was soon rebuilt, but burned again about 125 A.D. More rebuilding occurred, and within a few generations the population exceeded 40,000 people. After the fall of the Roman Empire in 476 A.D., however, the city was attacked numerous times by Vikings and other raiders, and soon London was largely abandoned."
+    },
+    {
+      "Name": "Madrid",
+      "Population": "3.182.175",
+      "TimeZone": "CET (+1)",
+      "Country": "Spain",
+      "ShortHistory": "Spain is a country with profound historical roots in Europe. Its identity and unique idiosyncrasies have been forged by a variety of phenomena, such as the discovery of the Americas and its neutral position during the two world wars. At the same time, however, there are strong parallels between Spanish history and the history of other European countries; although it never renounced its diversity, Spain emerged as a unified state at a very early stage and played a crucial role in some of the most brilliant episodes in modern European history."
+    },
+    {
+      "Name": "New York",
+      "Population": "8,804,190",
+      "TimeZone": "UTC−05:00",
+      "Country": "United States",
+      "ShortHistory": "The 'Sons of Liberty' campaigned against British authority in New York City, and the Stamp Act Congress of representatives from throughout the Thirteen Colonies met in the city in 1765 to organize resistance to Crown policies. The city's strategic location and status as a major seaport made it the prime target for British seizure in 1776. General George Washington lost a series of battles from which he narrowly escaped (with the notable exception of the Battle of Harlem Heights, his first victory of the war), and the British Army occupied New York and made it their base on the continent until late 1783, attracting Loyalist refugees."
+    },
+    {
+      "Name": "Moscov",
+      "Population": "13,010,112",
+      "TimeZone": "UTC+3",
+      "Country": "Rusia",
+      "ShortHistory": "The city of Moscow gradually grew around the Moscow Kremlin, beginning in the 14th century. It was the capital of the Grand Duchy of Moscow (or Muscovy) and then the Tsardom of Russia until the capital was moved to Saint Petersburg by Peter the Great. Moscow was the capital of the Russian Soviet Federative Socialist Republic from 1918, which then became the Soviet Union (1922 to 1991), and since 1991 has served as capital of the Russian Federation."
+    }
+  ]
+}

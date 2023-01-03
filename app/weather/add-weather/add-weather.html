@@ -1,0 +1,58 @@
+<md-content ng-controller="AddWeatherController as vm" layout-padding>
+    <form name="weatherForm">
+      <md-input-container class="md-block">
+        <label>City</label>
+        <input md-maxlength="30" required md-no-asterisk name="city" ng-model="newWeather.City">
+        <div ng-messages="weatherForm.city.$error">
+          <div ng-message="required">This is required.</div>
+          <div ng-message="md-maxlength">The city name must be less than 30 characters long.</div>
+        </div>
+      </md-input-container>
+
+      <div layout="column">
+        <md-input-container flex="50">
+          <label>Time</label>
+          <input required name="time" ng-model="newWeather.Time">
+          <div ng-messages="weatherForm.time.$error">
+            <div ng-message="required">This is required.</div>
+          </div>
+        </md-input-container>
+        <md-input-container flex="50">
+            <label>Weather description</label>
+            <input required name="description" ng-model="newWeather.Description">
+            <div ng-messages="weatherForm.description.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-input-container flex="50">
+            <label>Current temperature</label>
+            <input required name="currentTemperature" ng-model="newWeather.CurrentTemperature">
+            <div ng-messages="weatherForm.currentTemperature.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-input-container flex="50">
+            <label>Wind</label>
+            <input required name="wind" ng-model="newWeather.Wind">
+            <div ng-messages="weatherForm.wind.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+          <md-input-container flex="50">
+            <label>Humidity</label>
+            <input required name="humidity" ng-model="newWeather.Humidity">
+            <div ng-messages="weatherForm.humidity.$error">
+              <div ng-message="required">This is required.</div>
+            </div>
+          </md-input-container>
+      </div>
+      <md-dialog-actions layout="row">
+        <md-button ng-click="vm.cancel()">
+         Cancel
+        </md-button>
+        <md-button ng-disabled="weatherForm.$invalid || weatherForm.$pristine" class="md-raised md-primary" ng-click="vm.save(newWeather)">
+          Save
+        </md-button>
+      </md-dialog-actions>
+    </form>
+  </md-content>
